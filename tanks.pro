@@ -10,15 +10,12 @@ CONFIG += c++11
 
 SOURCES += \
     View.cpp \
-    main.cpp \
-    mainwindow.cpp
+    main.cpp
 
 HEADERS += \
-    View.h \
-    mainwindow.h
+    View.h
 
-FORMS += \
-    mainwindow.ui
+FORMS +=
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

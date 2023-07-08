@@ -2,12 +2,19 @@
 #define VIEW_H
 
 #include <QObject>
+#include <QGraphicsView>
+#include <QGraphicsScene>
+#include <QTimer>
 
-class View : public QObject
+class View :  public QGraphicsView
 {
     Q_OBJECT
+private:
+    QGraphicsScene *scene;
+    QTimer *viewTimer;
+
 public:
-    explicit View(QObject *parent = nullptr);
+    explicit View();
 
 signals:
 
