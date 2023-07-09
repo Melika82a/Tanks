@@ -13,4 +13,8 @@ View::View() : QGraphicsView()
     //set fixed size
     setFixedSize(1620,780);
 
+    //delete scrollbars
+    setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+
 }
