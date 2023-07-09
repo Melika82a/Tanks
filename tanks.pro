@@ -9,6 +9,7 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    Health.cpp \
     Player.cpp \
     Tank.cpp \
     View.cpp \
@@ -18,6 +19,7 @@ SOURCES += \
     objects.cpp
 
 HEADERS += \
+    Health.h \
     Player.h \
     Tank.h \
     View.h \
