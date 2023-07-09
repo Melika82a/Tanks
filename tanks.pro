@@ -12,11 +12,13 @@ SOURCES += \
     View.cpp \
     game.cpp \
     main.cpp \
+    mapcreator.cpp \
     objects.cpp
 
 HEADERS += \
     View.h \
     game.h \
+    mapcreator.h \
     objects.h
 
 FORMS +=
