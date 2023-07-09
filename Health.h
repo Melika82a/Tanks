@@ -7,8 +7,8 @@ class Health
 public:
     Health();
 private:
-    tank_health;
-    tank_maxHealth;
+    int tank_health;
+    int tank_maxHealth;
 };
 
 #endif // HEALTH_H

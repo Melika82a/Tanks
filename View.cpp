@@ -1,12 +1,14 @@
 #include "View.h"
-#include <QMediaPlayer>
+
 
 View::View() : QGraphicsView()
 {
+    //create view controller
+    viewController = new Controller();
+
     //create scene
-    scene = new QGraphicsScene();
-    scene->setSceneRect(0, 0, 1620,780);
-    setScene(scene);
+
+    setScene(viewController->scene);
 
     //set background image
     setBackgroundBrush(QBrush(QImage(":/images/background.jpg")));
@@ -19,7 +21,20 @@ View::View() : QGraphicsView()
     setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
     //set background music
-    auto musicPlayer = new QMediaPlayer();
-    musicPlayer->setMedia(QUrl("qrc:/music/Overlord-Battle.mp3"));
-    musicPlayer->play();
+    viewPlayer = new QMediaPlayer();
+    viewPlayer->setMedia(QUrl("qrc:/music/Overlord-Battle.mp3"));
+    viewPlayer->play();
+
+    //initialize seconds to zero
+    seconds = 0;
+}
+
+View::~View()
+{
+
+}
+
+void View::increment_time()
+{
+    ++seconds;
 }
