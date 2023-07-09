@@ -10,6 +10,7 @@ CONFIG += c++11
 
 SOURCES += \
     Player.cpp \
+    Tank.cpp \
     View.cpp \
     game.cpp \
     main.cpp \
@@ -18,6 +19,7 @@ SOURCES += \
 
 HEADERS += \
     Player.h \
+    Tank.h \
     View.h \
     game.h \
     mapcreator.h \
