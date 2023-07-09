@@ -1,5 +1,7 @@
 <RCC>
-    <qresource prefix="/new/prefix1"/>
+    <qresource prefix="/music">
+        <file>Overlord-Battle.mp3</file>
+    </qresource>
     <qresource prefix="/images">
         <file>background.jpg</file>
         <file>box.jpg</file>

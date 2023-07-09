@@ -1,4 +1,5 @@
 #include "View.h"
+#include <QMediaPlayer>
 
 View::View() : QGraphicsView()
 {
@@ -17,4 +18,8 @@ View::View() : QGraphicsView()
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
+    //set background music
+    auto musicPlayer = new QMediaPlayer();
+    musicPlayer->setMedia(QUrl("qrc:/music/Overlord-Battle.mp3"));
+    musicPlayer->play();
 }
