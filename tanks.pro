@@ -10,10 +10,12 @@ CONFIG += c++11
 
 SOURCES += \
     View.cpp \
+    game.cpp \
     main.cpp
 
 HEADERS += \
-    View.h
+    View.h \
+    game.h
 
 FORMS +=
 
