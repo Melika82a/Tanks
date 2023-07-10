@@ -27,11 +27,18 @@ View::View() : QGraphicsView()
 
     //initialize seconds to zero
     seconds = 0;
+
+    //start timer
+    viewTimer = new QTimer();
+    viewTimer->start(1000);
+    connect(viewTimer,SIGNAL(timeout),this,SLOT(increment_time()));
 }
 
 View::~View()
 {
-
+    delete viewTimer;
+    delete viewPlayer;
+    delete viewController;
 }
 
 void View::increment_time()

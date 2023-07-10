@@ -12,6 +12,7 @@ class Controller : public QObject
 {
     Q_OBJECT
     friend class View;
+    friend class mapcreator;
 private:
     QGraphicsScene * scene;
     QTimer * ctimer;
@@ -23,6 +24,7 @@ public:
     explicit Controller(QObject *parent = nullptr);
     ~Controller();
     void addTank();
+
 signals:
 
 };

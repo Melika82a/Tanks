@@ -1,11 +1,16 @@
 #ifndef TANK_H
 #define TANK_H
+#include <QObject>
+#include <QTimer>
+#include <QGraphicsPixmapItem>
 #include "Health.h"
 #include <QString>
-class Tank
+#include <QMediaPlayer>
+class Tank : public QObject , public QGraphicsPixmapItem
 {
+    Q_OBJECT
 public:
-    Tank();
+    Tank(const int& pixPer20MiliSec,QGraphicsItem * parentf);
 
 private:
     int type;
@@ -15,6 +20,8 @@ private:
     QString tank_ID;
     //I dont know how we work with angles!
     int angle;
+    int pixPer20MiliSec;
+    QMediaPlayer * tankplayer;
 
 };
 

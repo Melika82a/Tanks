@@ -1,11 +1,13 @@
 <RCC>
     <qresource prefix="/music">
         <file>Overlord-Battle.mp3</file>
+        <file>tankride.wav</file>
     </qresource>
     <qresource prefix="/images">
         <file>background.jpg</file>
         <file>box.jpg</file>
         <file>bricks.png</file>
         <file>forest.jpg</file>
+        <file>tankpic.png</file>
     </qresource>
 </RCC>
