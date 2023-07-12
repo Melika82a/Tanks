@@ -11,23 +11,23 @@ CONFIG += c++11
 SOURCES += \
     Controller.cpp \
     Health.cpp \
-    Player.cpp \
     Tank.cpp \
     View.cpp \
     game.cpp \
     main.cpp \
     mapcreator.cpp \
-    objects.cpp
+    objects.cpp \
+    wall.cpp
 
 HEADERS += \
     Controller.h \
     Health.h \
-    Player.h \
     Tank.h \
     View.h \
     game.h \
     mapcreator.h \
-    objects.h
+    objects.h \
+    wall.h
 
 FORMS +=
 

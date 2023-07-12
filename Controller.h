@@ -1,12 +1,12 @@
 #ifndef CONTROLLER_H
 #define CONTROLLER_H
-
+#include <QGraphicsItem>
 #include <QObject>
 #include <QGraphicsScene>
 #include <QTimer>
 #include <QGraphicsRectItem>
 #include <Tank.h>
-#include <objects.h>
+#include <wall.h>
 
 class Controller : public QObject
 {
@@ -18,12 +18,16 @@ private:
     QTimer * ctimer;
     QGraphicsRectItem * holder;
     QList <Tank *> TankList;
-    QList <objects *> objectsList;
+    QList <wall *> wallList;
 
 public:
     explicit Controller(QObject *parent = nullptr);
     ~Controller();
     void addTank();
+    void addWall(int x, int y);
+    void addBox(int x, int y);
+    void addForest(int x, int y);
+
 
 signals:
 

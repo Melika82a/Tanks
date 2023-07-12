@@ -14,6 +14,8 @@ Controller::Controller(QObject *parent) : QObject(parent)
     ctimer = new QTimer();
     ctimer->start(50);
 
+        //
+
 }
 
 Controller::~Controller()
@@ -22,4 +24,12 @@ Controller::~Controller()
     delete scene;
     delete ctimer;
 
+}
+
+void Controller::addWall(int x , int y)
+{
+    wallList.push_back(new wall {1,holder});
+    //add to the scene
+    scene->addItem(wallList.last());
+    objectsList.last()->setpos(x,y);
 }

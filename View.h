@@ -9,6 +9,7 @@
 class View :  public QGraphicsView
 {
     Q_OBJECT
+    friend class mapcreator;
 private:
     QTimer *viewTimer;
     Controller * viewController;

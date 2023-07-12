@@ -10,4 +10,9 @@
         <file>forest.jpg</file>
         <file>tankpic.png</file>
     </qresource>
+    <qresource prefix="/maps">
+        <file>map_1.txt</file>
+        <file>map_2.txt</file>
+        <file>map_3.txt</file>
+    </qresource>
 </RCC>
